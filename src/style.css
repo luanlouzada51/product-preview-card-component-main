@@ -98,7 +98,11 @@ html {
     text-align: center;
     justify-content: center;
     margin-top: 10px;
+}
 
+.add-to-cart:hover {
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
 }
 
 .cart-image {

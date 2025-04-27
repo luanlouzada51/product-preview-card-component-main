@@ -1,0 +1,152 @@
+html {
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+
+}
+
+
+
+.itens .image, .itens .image .main-image,
+.itens .item {
+    width: 320px;
+    height: 484px;
+}
+
+.main-image {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.item {
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    gap: 5px;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.product-type {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+    color: hsl(228, 12%, 48%);
+    margin-top: 25px;
+}
+
+.item .name {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+}
+
+.item .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsl(228, 12%, 48%);
+    width: 270px;
+}
+
+.price {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.price .new-price {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.price .old-price {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.add-to-cart {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-style: none;
+    width: 16.5rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    gap: 3rem;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.cart-image {
+    padding-right: 1rem;
+}
+
+@media(max-width: 375px) {
+    .itens {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-image {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-mobile {
+        display: block;
+        width: 100vw;
+        padding: 0;
+        margin-bottom: -50px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .itens .image {
+        margin: 0;
+        padding: 0;
+        height: 236px;
+    }
+
+    .item {
+        width: 90vw;
+        gap: 0;
+        margin: 0 auto;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    .product-type {
+        margin-top: 0;
+        padding-top: 15px;
+    }
+}

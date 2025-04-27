@@ -103,6 +103,7 @@ html {
 .add-to-cart:hover {
     background-color: hsl(158, 42%, 18%);
     cursor: pointer;
+    transition: 0.3s ease in
 }
 
 .cart-image {
